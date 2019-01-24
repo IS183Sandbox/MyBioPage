@@ -3,110 +3,17 @@
 
 <head>
     <title>My Bio Page</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        html,
-        body {
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        h2 {
-            padding: 20px 0px 15px 0px;
-        }
-
-        p {
-            margin: 10px 0px;
-        }
-
-        .main-header,
-        .main-footer {
-            height: 75px;
-            width: 100vw;
-            background-color: #CCC;
-        }
-
-        .logo-text {
-            display: block;
-            padding: 20px;
-            font-weight: bold;
-            font-size: 30px;
-        }
-
-        .main-container {
-            height: calc(100vh - 150px);
-            width: 90vw;
-            margin: 0px auto;
-        }
-
-        .top-section {
-            width: 100%;
-            background-color: #CCC;
-            height: 210px;
-            margin: 10px 0px;
-            overflow: hidden;
-        }
-
-        .top-inner-section {
-            overflow: auto;
-        }
-
-        .bottom-section {
-            width: 100%;
-            height: 100%;
-            background-color: green;
-        }
-
-        .sidebar {
-            width: 25%;
-            background-color: #CCC;
-            height: 100%;
-        }
-
-        .pic-container {
-            height: 100%;
-            float: left;
-            margin-right: 20px;
-        }
-
-        .pic-container>img {
-            object-fit: cover;
-            display: block;
-            width: 190px;
-            margin: 10px;
-        }
-
-        .sidebar>ul {
-            list-style-type: none;
-        }
-
-        .sidebar>ul>li>a {
-            padding: 15px 20px;
-            display: block;
-            background-color: #CCC;
-            border: 1px solid #f1f1f1;
-        }
-
-        .footer-text {
-            text-align: center;
-            display: block;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header class="main-header">
+<body class="main-body-container">
+    <header class="main-header box-shadow">
         <span class="logo-text">
             Lucas Phan
         </span>
     </header>
     <section class="main-container">
-        <div class="top-section">
+        <div class="top-section box-shadow">
             <div class="top-inner-section">
                 <div class="pic-container">
                     <img src="./img/avatar.jpg" class="bio-image" alt="my pic">
@@ -131,25 +38,54 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-section">
+        <div class="bottom-section box-shadow">
             <aside class="sidebar">
                 <ul class="list">
                     <li>
-                        <a>Link 1</a>
+                        <a href="https://google.com" target="_blank">Google</a>
                     </li>
                     <li>
-                        <a>Link 1</a>
+                        <a href="#">Blackboard</a>
                     </li>
                     <li>
-                        <a>Link 1</a>
+                        <a href="#">yahoo</a>
                     </li>
                     <li>
-                        <a>Link 1</a>
+                        <a href="#">Fresno State</a>
+                    </li>
+                    <li>
+                        <a href="#">Fresno City</a>
                     </li>
                 </ul>
             </aside>
             <div class="gallery">
                 <h2>Gallery</h2>
+                <ul class="gallery-container">
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog1.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog2.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog3.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog4.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog5.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog6.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog7.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog8.jpeg" alt="item1">
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
